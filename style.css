@@ -87,7 +87,7 @@ body {
   border: 1px solid white;
   width: 400px;
   height: 300px;
-  opacity: 0%;
+  visibility: hidden;
 }
 
 .container .container__item span {
@@ -118,12 +118,11 @@ body {
   from {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    opacity: 0%;
   }
   to {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
-    opacity: 100%;
+    visibility: visible;
   }
 }
 
@@ -131,12 +130,11 @@ body {
   from {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    opacity: 0%;
   }
   to {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
-    opacity: 100%;
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=style.css.map */

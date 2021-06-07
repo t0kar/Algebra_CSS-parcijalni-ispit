@@ -21,7 +21,7 @@ body {
         border: 1px solid white;
         width: 400px;
         height: 300px;
-        opacity: 0%;
+        visibility: hidden;
 
         span {
             color: white;
@@ -46,11 +46,10 @@ body {
     @keyframes animation-1 {
         from {
             transform: translateY(-100%);
-            opacity: 0%;
         }
         to {
             transform: translateY(100%);
-            opacity: 100%;
+            visibility: visible;
         }
     }
 }
