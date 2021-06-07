@@ -87,7 +87,7 @@ body {
   border: 1px solid white;
   width: 400px;
   height: 300px;
-  top: -100%;
+  opacity: 0%;
 }
 
 .container .container__item span {
@@ -98,6 +98,8 @@ body {
 
 .container .container__item:nth-child(1) {
   background-color: rgba(128, 128, 128, 0.5);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .container .container__item:nth-child(2) {
@@ -116,10 +118,12 @@ body {
   from {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+    opacity: 0%;
   }
   to {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
   }
 }
 
@@ -127,10 +131,12 @@ body {
   from {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+    opacity: 0%;
   }
   to {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
